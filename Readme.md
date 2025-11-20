@@ -240,6 +240,7 @@ print(f"Dimensões coloridas: {imagem_rgb.shape}")  # (altura, largura, 3 canais
 
 > [!info] ### Remoção de Ruído
 > ![[Pasted image 20251002213149.png]]
+>
 > ![[Pasted image 20251002213203.png]]
 > ![[Pasted image 20251002213525.png]]
 
@@ -318,7 +319,7 @@ print(f"Dimensões coloridas: {imagem_rgb.shape}")  # (altura, largura, 3 canais
 	 - [[Operações Lógicas em Imagens]]
 
 ### 2.2 Fundamentos Matemáticos
-- [[Processamento de Imagens/Fundamentos Matemáticos/Sistemas de Coordenadas]]
+- [[Sistemas de Coordenadas]]
 - [[Operações com Matrizes]]
 	- [[Matriz de Translação]]
 	 - [[Matriz de Rotação]]
