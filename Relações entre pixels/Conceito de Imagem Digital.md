@@ -29,11 +29,13 @@ Esta operação introduz um erro de quantização $e_q = f_d - f_q$, que é limi
 > [!warning] Teorema da Amostragem de Nyquist-Shannon Este teorema estabelece que para reconstruir perfeitamente um sinal contínuo a partir de suas amostras, a frequência de amostragem $f_s$ deve satisfazer: $$f_s \geq 2f_{max}$$ onde $f_{max}$ é a frequência máxima presente no sinal original. Em imagens bidimensionais, isso se aplica independentemente em cada direção espacial. Quando violamos esta condição ($f_s < 2f_{max}$), ocorre aliasing, criando artefatos visuais. A frequência mínima $f_{Nyquist} = 2f_{max}$ é chamada frequência de Nyquist.
 
 ## Profundidade de Bits e Faixa Dinâmica
+![[Pasted image 20251120205524.png]]
 
 A profundidade de bits $b$ determina quantos níveis distintos de intensidade podem ser representados. A relação fundamental é $L = 2^b$, onde algumas profundidades comuns incluem:
 
 Para $b = 1$: $L = 2^1 = 2$ níveis (imagem binária pura) Para $b = 8$: $L = 2^8 = 256$ níveis (padrão para cada canal RGB) Para $b = 16$: $L = 2^{16} = 65536$ níveis (imagens médicas e fotografia profissional)
-
+![[Pasted image 20251120205436.png]]
+![[Pasted image 20251120205456.png]]
 A faixa dinâmica de uma imagem é definida como a razão entre a maior e a menor intensidade mensurável:
 
 $$D = \frac{I_{max}}{I_{min}}$$
