@@ -75,7 +75,6 @@
 - [[Separação de Fontes (voz/música)]]
 - [[Visualização Espectral Interativa]]
 - **Adição:** Ampliar os algoritmos do DSP para reconhecer e extrair características de sinais. ([dexonsystems-com.translate.goog](https://dexonsystems-com.translate.goog/blog/what-is-dsp?_x_tr_hl=pt&_x_tr_pto=tc&_x_tr_sl=en&_x_tr_tl=pt "Digital Signal Processing (DSP): Ultimate Guide I DEXON Systems"))
-    
 
 ---
 
@@ -88,7 +87,6 @@
 - [[Detecção de Eventos Sonoros]]
 - [[Compressão de Áudio (MP3, FLAC, OGG)]]
 - **Adição:** Mostrar como DSP entra em comunicação, compressão, sistemas de som imersivos etc. ([dexonsystems-com.translate.goog](https://dexonsystems-com.translate.goog/blog/what-is-dsp?_x_tr_hl=pt&_x_tr_pto=tc&_x_tr_sl=en&_x_tr_tl=pt "Digital Signal Processing (DSP): Ultimate Guide I DEXON Systems"))
-    
 
 ---
 

@@ -301,28 +301,6 @@ print(f"Dimensões coloridas: {imagem_rgb.shape}")  # (altura, largura, 3 canais
 
 - [[Conceito de Imagem Digital]]
 - [[Pixels e Matrizes]]
--[[Modelos de Cor]]
-  - [[Escala de Cinza]]
-  - [[Modelo RGB]]
-  - [[Modelo RGBA]]
-  - [[Modelo CMY]]
-  - [[Modelo CMYK]]
-  - [[Modelo HSV]]
-  - [[Modelo HSL]]
-  - [[Modelo HSI]]
-  - [[Modelo HSB]]
-  - [[Modelo YUV]]
-  - [[Modelo YIQ]]
-  - [[Modelo YCbCr]]
-  - [[Modelo CIE XYZ]]
-  - [[Modelo CIELab]]
-  - [[Modelo CIELuv]]
-  - [[Modelo Hunter Lab]]
-  - [[Modelo OHTA]]
-  - [[Modelo I1I2I3]]
-  - [[Modelo ICtCp]]
-  - [[Modelo LMS]]
-- [[Formatos de Arquivo]] (JPEG, PNG, BMP, TIFF)
 
 ## 🔢 **MÓDULO 2: DIGITALIZAÇÃO E FUNDAMENTOS MATEMÁTICOS**
 
@@ -355,6 +333,30 @@ print(f"Dimensões coloridas: {imagem_rgb.shape}")  # (altura, largura, 3 canais
 - [[Interpolação em Imagens]]
 
 ## 🛠️ **MÓDULO 3: PRÉ-PROCESSAMENTO**
+
+### 3.1 Modelos de Cores
+-[[Modelos de Cor]]
+  - [[Escala de Cinza]]
+  - [[Modelo RGB]]
+  - [[Modelo RGBA]]
+  - [[Modelo CMY]]
+  - [[Modelo CMYK]]
+  - [[Modelo HSV]]
+  - [[Modelo HSL]]
+  - [[Modelo HSI]]
+  - [[Modelo HSB]]
+  - [[Modelo YUV]]
+  - [[Modelo YIQ]]
+  - [[Modelo YCbCr]]
+  - [[Modelo CIE XYZ]]
+  - [[Modelo CIELab]]
+  - [[Modelo CIELuv]]
+  - [[Modelo Hunter Lab]]
+  - [[Modelo OHTA]]
+  - [[Modelo I1I2I3]]
+  - [[Modelo ICtCp]]
+  - [[Modelo LMS]]
+- [[Formatos de Arquivo]] (JPEG, PNG, BMP, TIFF)
 
 ### 3.1 Operações de Préprocessamento
  - [[Técnicas de Realce]]

@@ -8,6 +8,7 @@
 > 	- $w = f(x, y, z)$ (3D – volume).  
 > - **Na Computação:** é uma **sequência discreta de valores numéricos** usada para representar ou processar uma informação — por exemplo, um vetor com amostras de áudio digital.
 
+
 > [!example] 
 >  exemplos de **“sinais”** que, no geral, **mudam e transmitem informação**:
 >

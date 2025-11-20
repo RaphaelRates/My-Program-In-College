@@ -92,24 +92,24 @@ $$I_{gray} = \begin{bmatrix} 0.299 & 0.587 & 0.114 \end{bmatrix} \begin{bmatrix}
 
 > [!tip] Espaço de Cor HSV O modelo HSV (Hue, Saturation, Value) oferece uma representação mais intuitiva. A conversão de RGB para HSV envolve: $$V = \max(R,G,B)$$ $$S = \begin{cases} 0 & \text{se } V = 0 \ \frac{V - \min(R,G,B)}{V} & \text{caso contrário} \end{cases}$$ $$H = \begin{cases} 60° \times \frac{G-B}{V-\min(R,G,B)} & \text{se } V = R \ 60° \times (2 + \frac{B-R}{V-\min(R,G,B)}) & \text{se } V = G \ 60° \times (4 + \frac{R-G}{V-\min(R,G,B)}) & \text{se } V = B \end{cases}$$ onde $H \in [0°, 360°]$, $S \in [0,1]$ e $V \in [0,1]$. Este modelo separa informação cromática (H,S) da informação de luminância (V), facilitando operações como ajuste de brilho sem alterar a tonalidade.
 
-## Vizinhança e Conectividade
-
-Em processamento de imagens, frequentemente precisamos considerar pixels vizinhos. Para um pixel $p$ na posição $(x,y)$, definimos diferentes tipos de vizinhança:
-
+> [!note] ## Vizinhança e Conectividade
+>
+> Em processamento de imagens, frequentemente precisamos considerar pixels vizinhos. Para um pixel $p$ na posição $(x,y)$, definimos diferentes tipos de vizinhança:
+>
 **Vizinhança-4 (conectividade vertical e horizontal):** $$N_4(p) = {(x\pm 1, y), (x, y\pm 1)}$$
-
-Esta vizinhança contém 4 pixels adjacentes nas direções cardeais. A distância entre $p$ e seus vizinhos em $N_4$ é chamada distância city-block ou $L_1$:
-
+>
+> Esta vizinhança contém 4 pixels adjacentes nas direções cardeais. A distância entre $p$ e seus vizinhos em $N_4$ é chamada distância city-block ou $L_1$:
+>
 $$D_4(p,q) = |x_p - x_q| + |y_p - y_q|$$
-
+>
 **Vizinhança-8 (inclui diagonais):** $$N_8(p) = N_4(p) \cup {(x\pm 1, y\pm 1)}$$
-
+>
 Contém os 8 pixels que cercam $p$ completamente. A distância correspondente é a distância de Chebyshev ou $L_\infty$:
-
+>
 $$D_8(p,q) = \max(|x_p - x_q|, |y_p - y_q|)$$
-
+>
 **Distância Euclidiana:** $$D_E(p,q) = \sqrt{(x_p - x_q)^2 + (y_p - y_q)^2}$$
-
+>
 Esta é a distância geométrica tradicional entre dois pontos no plano, usada em muitos algoritmos de processamento de imagens.
 
 > [!info] Conectividade e Componentes Conexas Dois pixels $p$ e $q$ são conectados se existe um caminho de pixels adjacentes ligando-os. Para imagens binárias, definimos componentes conexas como conjuntos maximais de pixels conectados com mesmo valor. O número de componentes conexas $C$ em uma imagem binária é uma característica topológica importante, calculada através de algoritmos como flood-fill ou union-find. A relação de Euler para imagens digitais relaciona componentes conexas $C$ com buracos $H$: $$\chi = C - H$$ onde $\chi$ é a característica de Euler da imagem.

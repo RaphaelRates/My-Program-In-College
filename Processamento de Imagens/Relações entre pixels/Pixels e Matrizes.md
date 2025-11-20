@@ -139,5 +139,5 @@ Os pesos refletem a sensibilidade do olho humano a diferentes cores.
 4. **Inteligência Artificial**: Redes convolucionais (CNN) - múltiplas convoluções matriciais
 5. **Realidade Aumentada**: Transformações geométricas em tempo real
 
-próximos: [[Modelos de Cor]]
+próximos: [[Relações Entre Pixels]]
 
