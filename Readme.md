@@ -1,4 +1,4 @@
-
+# Processamento de Imagens
 > [!abstract] *"Uma imagem vale mais que mil palavras" - E agora, vamos ensinar computadores a ler essas palavras!*
 
 > [!summary] ## 🎯 Visão Geral
