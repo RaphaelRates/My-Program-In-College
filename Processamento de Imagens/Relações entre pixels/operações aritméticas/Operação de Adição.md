@@ -1,3 +1,6 @@
+> [!note] Dada uma imagem digital, podemos aplicar diversas operações que alteram os valores dos pixels.
+> Por exemplo, operações aritméticas — normalmente usadas em números decimais — também podem ser aplicadas às imagens digitais, como ○ Adição ○ Subtração ○ Multiplicação ○ Divisão
+
 # Operação de Adição em Processamento de Imagens
 
 > [!NOTE] Conceito Fundamental
