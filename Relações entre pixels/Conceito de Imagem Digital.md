@@ -11,8 +11,9 @@ $$f(x,y), \quad x \in {0,1,2,...,M-1}, \quad y \in {0,1,2,...,N-1}$$
 onde $M$ e $N$ definem as dimensões da imagem em pixels. Cada par ordenado $(x,y)$ identifica unicamente um elemento da imagem chamado pixel (picture element). O valor total de pixels em uma imagem é dado pelo produto $M \times N$.
 
 > [!info] Amostragem Espacial A amostragem espacial transforma uma função contínua em uma função discreta através da multiplicação com uma função de amostragem. Matematicamente, isso pode ser expresso como: $$f_d(x,y) = f_c(x,y) \cdot s(x,y)$$ onde $f_c(x,y)$ é a função contínua original e $s(x,y)$ é a função de amostragem, tipicamente modelada como: $$s(x,y) = \sum_{i=0}^{M-1}\sum_{j=0}^{N-1}\delta(x-i\Delta x, y-j\Delta y)$$ Aqui, $\delta$ representa a função impulso de Dirac, e $\Delta x$ e $\Delta y$ são os intervalos de amostragem espacial. Quanto menores esses intervalos, maior a densidade de amostragem e, consequentemente, maior a resolução espacial da imagem resultante.
-
+![[Pasted image 20251120205309.png]]
 ## Quantização de Intensidade
+![[Pasted image 20251120205346.png]]
 
 Após discretizar o espaço, precisamos discretizar também as amplitudes. No mundo físico, a intensidade luminosa é uma grandeza contínua que pode assumir infinitos valores dentro de um intervalo. A quantização mapeia esse intervalo contínuo $[I_{min}, I_{max}]$ em um conjunto finito de $L$ níveis discretos. Para imagens digitais, tipicamente usamos:
 
@@ -23,6 +24,7 @@ onde $b$ é o número de bits usados para representar cada pixel. O processo de 
 $$f_q = Q[f_d] = \text{round}\left(\frac{f_d - I_{min}}{I_{max} - I_{min}} \cdot (L-1)\right)$$
 
 Esta operação introduz um erro de quantização $e_q = f_d - f_q$, que é limitado a $\pm\frac{1}{2}$ do intervalo de quantização.
+![[Pasted image 20251120205218.png]]
 
 > [!warning] Teorema da Amostragem de Nyquist-Shannon Este teorema estabelece que para reconstruir perfeitamente um sinal contínuo a partir de suas amostras, a frequência de amostragem $f_s$ deve satisfazer: $$f_s \geq 2f_{max}$$ onde $f_{max}$ é a frequência máxima presente no sinal original. Em imagens bidimensionais, isso se aplica independentemente em cada direção espacial. Quando violamos esta condição ($f_s < 2f_{max}$), ocorre aliasing, criando artefatos visuais. A frequência mínima $f_{Nyquist} = 2f_{max}$ é chamada frequência de Nyquist.
 
