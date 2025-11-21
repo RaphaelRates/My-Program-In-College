@@ -4,6 +4,7 @@
 > A **subtração de imagens** é uma operação aritmética onde os valores de pixels correspondentes de duas imagens são subtraídos para produzir uma nova imagem. Matematicamente:
 > $$C(x, y) = A(x, y) - B(x, y)$$
 > onde $C(x, y)$ é o pixel resultante na posição $(x, y)$.
+> ![[Pasted image 20251120214501.png]]
 
 ## 📋 Fundamentos da Operação de Subtração
 
@@ -69,6 +70,7 @@
 > [!SUCCESS] Aplicação Mais Importante
 > **Problema**: Identificar objetos em movimento entre frames consecutivos
 > **Solução**: Subtrair frames para detectar mudanças
+> ![[Pasted image 20251120214548.png]]
 
 **Implementação:**
 ```python
