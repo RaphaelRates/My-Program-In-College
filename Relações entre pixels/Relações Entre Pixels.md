@@ -6,6 +6,7 @@
 ## Conceito de vizinhança
 > [!note] Vizinhança
 > a **Vizinhança** de um pixel é o conjunto de outro pixels próximos a ele, definido pruma regra de proximidade. 
+> ![[Pasted image 20251120210021.png]]
 > 
 > Sendo um pixel $p$ nas coordenadas $(x, y)$. temos alguns conceitos como:
 
