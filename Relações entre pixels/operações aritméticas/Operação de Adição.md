@@ -14,7 +14,7 @@
 > - **Domínio**: Operação aplicada a cada pixel individualmente
 > - **Resultado**: Valores de pixel podem exceder o máximo permitido (ex: 255 em imagens 8-bit)
 > - **Normalização**: Frequentemente necessária para manter os valores dentro da faixa válida
-
+![[Pasted image 20251121091459.png]]
 ### Formulação Matemática
 
 > [!IMPORTANT] Equações da Adição
@@ -27,7 +27,7 @@
 > 
 > **Com normalização:**
 > $$C(i,j) = \frac{\sum_{k=1}^{n} I_k(i,j)}{n} \quad \text{(média)}$$
-
+> ![[Pasted image 20251121091509.png]]
 ---
 
 ## 🔧 Implementação e Técnicas

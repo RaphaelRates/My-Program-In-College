@@ -312,6 +312,7 @@ print(f"Dimensões coloridas: {imagem_rgb.shape}")  # (altura, largura, 3 canais
 	 - [[DIstancia City Block (Quarteirão)]]
 	 - [[Operação de Adição]]
 	 - [[Operação de Subtração]]
+	 - [[Operação de Multiplicação]]
 	 - [[Operação de Divisão]]
 	 - [[Conexão - 4 Vizinhos]]
 	 - [[Conexão - 8 vizinhos]]
